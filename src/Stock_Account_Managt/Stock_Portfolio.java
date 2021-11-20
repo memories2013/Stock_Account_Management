@@ -14,7 +14,8 @@ public class Stock_Portfolio {
 		
 		for(int i=0; i<Num_of_Stocks; i++)
 		{
-			System.out.println("Stock " +(++i));
+			int stock_num = i;
+			System.out.println("Stock " +(++stock_num));
 			System.out.println("Please enter the share name: ");
 			String Share_Name = sc.next();
 			
@@ -40,6 +41,10 @@ public class Stock_Portfolio {
 		Num_of_Stocks = sc.nextInt();
 		
 		stock_portfolio();
+
+		Account my_account = new Account();
+		my_account.debit(Stock.total_stocks_value);
+		
 		
 	}
 
