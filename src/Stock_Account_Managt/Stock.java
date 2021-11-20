@@ -44,7 +44,7 @@ public class Stock {
 		return stock_value;
 	}
 	
-	public int all_stocks_value() {
+	public int total_stocks_value() {
 		total_stocks_value = stock_value+total_stocks_value;
 		return total_stocks_value;
 	}
@@ -52,7 +52,7 @@ public class Stock {
 	@Override
 	public String toString() {
 		return "Stock [share_name=" + share_name + ", num_of_shares=" + num_of_shares + ", share_price=" + share_price
-				+ ", stock_value()=" + stock_value() + ", all_stocks_value()=" + all_stocks_value() + "]";
+				+ ", stock_value()=" + stock_value + ", total_stocks_value()=" + total_stocks_value + "]";
 	}
 	
 	
